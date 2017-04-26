@@ -1,0 +1,21 @@
+<div class="well">
+<table class="table table-striped">
+  <tr>
+    <th>Incident Type</th>
+    <th>Employee Reporting</th>
+    <th>Date of Incident</th>
+    <th>Follow Up Needed</th>
+  </tr>
+  <div class="well">
+  <tr>
+    <th>{{controller.incident.id}}</th>
+    <th>{{controller.incidentDetails.employeeFirstName}} {{controller.incidentDetails.employeeLastName}}</th>
+    <th>{{controller.incidentDetails.dateOfIncident}}</th>
+    <th>{{controller.incidentDetails.followUpNeeded}}</th>
+  </tr>
+  </table>
+</div>
+<hr>
+<button class="btn btn-default" ng-click="controller.updateIncident()">Edit</button>
+<button class="btn btn-danger" ng-click="controller.deleteIncident()">Delete</button>
+</div>

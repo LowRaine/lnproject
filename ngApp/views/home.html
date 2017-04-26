@@ -1,0 +1,22 @@
+<div class="well">
+  <h5>Incident Type:</h5>
+  <select name="id" class-"form-control" ng-model="controller.incident.id"/><hr>
+    <option value="coworker">Complaint about a Coworker</option>
+    <option value="conditions">Complaint about Working Conditions</option>
+    <option value="supervisor">Complaint about a Supervisor</option>
+    <option value="vendor">Complaint about a Vendor </option>
+    <option value="injury">Reporting a Workplace Injury</option>
+  </select>
+<div class="well">
+  <h6>First Name of Person Reporting</h6>
+  <input type="text" class="form-control" ng-model="controller.incidentDetails.employeeFirstName"/><hr>
+  <h6>Last Name of Person Reporting</h6>
+  <input type="text" class="form-control" ng-model="controller.incidentDetails.employeeLastName"/><hr>
+  <h6>Date of Incident</h6>
+  <input type="date" class="form-control" ng-model="controller.incidentDetails.dateOfIncident"/><hr>
+  <h6>Do you need follow up regarding this? Check box for "yes"</h6>
+  <input type="checkbox" class="form-control" ng-model="controller.incident.followUpNeeded"/>
+</div>
+  <button class="btn btn-default" ng-click="controller.cancel()">Cancel</button>
+  <button class="btn btn-primary" ng-click="controller.saveIncident()">Save Incident</button>
+</div>
